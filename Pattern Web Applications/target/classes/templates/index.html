@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Index</title>
+</head>
+<body>
+	<p th:text="'Hello, ' + ${name} + '!'" />
+	<form action="/pattern-page" method="post">
+        <button type="submit" name="normalpattern" value="pattern">Pattern</button>
+    </form>
+    <br>
+    <form action="/Pattern_Name" method="post">
+        <button type="submit" name="namepattern" value="pattern">Name Pattern</button>
+    </form>
+</body>
+</html>
